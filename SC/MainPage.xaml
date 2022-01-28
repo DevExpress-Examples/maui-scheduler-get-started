@@ -1,0 +1,33 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:dxsch="clr-namespace:DevExpress.Maui.Scheduler;assembly=DevExpress.Maui.Scheduler"
+             x:Class="SchedulerExample.MainPage"
+             Title="Example">
+    <dxsch:WorkWeekView Start="{Binding StartDate}"
+                        FirstDayOfWeek="Monday"
+                        WorkDays="Monday,Tuesday,Wednesday,Friday" 
+                        WorkTime="7:00:00-19:00:00"
+                        ShowWorkTimeOnly="True"
+                        TimeScaleInterval="01:00:00"
+                        TimeScaleSlotCount="4"
+                        SnapToCellsMode="Never"
+                        Tap="WorkWeekView_Tap">
+        <dxsch:WorkWeekView.DataStorage>
+            <dxsch:SchedulerDataStorage x:Name="storage">
+                <dxsch:SchedulerDataStorage.DataSource>
+                    <dxsch:DataSource AppointmentsSource="{Binding MedicalAppointments}">
+                        <dxsch:DataSource.AppointmentMappings>
+                            <dxsch:AppointmentMappings 
+                            Id="Id" 
+                            Start="StartTime" 
+                            End="EndTime" 
+                            Subject="Subject"
+                            LabelId="LabelId"
+                            Location="Location"/>
+                        </dxsch:DataSource.AppointmentMappings>
+                    </dxsch:DataSource>
+                </dxsch:SchedulerDataStorage.DataSource>
+            </dxsch:SchedulerDataStorage>
+        </dxsch:WorkWeekView.DataStorage>
+    </dxsch:WorkWeekView>
+</ContentPage>
