@@ -17,7 +17,11 @@ Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuG
 
 ## What's in This Repository
 
-This repository contains an example that demonstrates how to get started with **DevExpress Scheduler for .NET MAUI**.
+The **DevExpress Scheduler for .NET MAUI** display appointments (regular and recurrent planned events) and allows users to manage them.
+
+<img src="./Images/week-view.png" alt="Week View" height="700">
+
+This repository contains an example that demonstrates how to get started with the **DevExpress Scheduler for .NET MAUI**.
 
 ## Documentation
 
