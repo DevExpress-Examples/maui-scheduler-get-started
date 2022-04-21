@@ -42,10 +42,4 @@
 	<ItemGroup>
 		<PackageReference Include="DevExpress.Maui.Scheduler" Version="22.1.1-pre-*" />
 	</ItemGroup>
-	
-	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0-android'">
-	  <PackageReference Include="Xamarin.Kotlin.StdLib">
-	    <Version>1.5.31.2</Version>
-	  </PackageReference>
-	</ItemGroup>
 </Project>
