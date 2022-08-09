@@ -15,7 +15,8 @@
         <dxsch:WorkWeekView.DataStorage>
             <dxsch:SchedulerDataStorage x:Name="storage">
                 <dxsch:SchedulerDataStorage.DataSource>
-                    <dxsch:DataSource AppointmentsSource="{Binding MedicalAppointments}">
+                    <dxsch:DataSource AppointmentsSource="{Binding MedicalAppointments}"
+                                      AppointmentLabelsSource="{Binding AppointmentTypes}">
                         <dxsch:DataSource.AppointmentMappings>
                             <dxsch:AppointmentMappings 
                             Id="Id" 
@@ -25,6 +26,12 @@
                             LabelId="LabelId"
                             Location="Location"/>
                         </dxsch:DataSource.AppointmentMappings>
+                        <dxsch:DataSource.AppointmentLabelMappings>
+                            <dxsch:AppointmentLabelMappings
+                                Caption="Caption"
+                                Color="Color"
+                                Id="Id"/>
+                        </dxsch:DataSource.AppointmentLabelMappings>
                     </dxsch:DataSource>
                 </dxsch:SchedulerDataStorage.DataSource>
             </dxsch:SchedulerDataStorage>

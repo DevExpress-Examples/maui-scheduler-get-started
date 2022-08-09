@@ -1,9 +1,12 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SchedulerExample
-{
-    public class MedicalAppointment
-    {
+namespace SchedulerCustomAppearance {
+    public class MedicalAppointment {
         public int Id { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
@@ -12,8 +15,7 @@ namespace SchedulerExample
         public string Location { get; set; }
     }
 
-    public class ReceptionDeskData
-    {
+    public class ReceptionDeskData {
         public static DateTime BaseDate = DateTime.Today;
 
         public static string[] PatientNames = { "Andrew Glover", "Mark Oliver",
@@ -30,8 +32,7 @@ namespace SchedulerExample
 
         static Random rnd = new Random();
 
-        void CreateMedicalAppointments()
-        {
+        void CreateMedicalAppointments() {
             int appointmentId = 1;
             int patientIndex = 0;
             DateTime start;
@@ -39,8 +40,7 @@ namespace SchedulerExample
             ObservableCollection<MedicalAppointment> result =
                                                      new ObservableCollection<MedicalAppointment>();
             for (int i = -20; i < 20; i++)
-                for (int j = 0; j < 15; j++)
-                {
+                for (int j = 0; j < 7; j++) {
                     int room = rnd.Next(1, 100);
                     start = BaseDate.AddDays(i).AddHours(rnd.Next(8, 17)).AddMinutes(rnd.Next(0, 40));
                     duration = TimeSpan.FromMinutes(rnd.Next(20, 30));
@@ -55,15 +55,12 @@ namespace SchedulerExample
         }
 
         MedicalAppointment CreateMedicAppointment(int appointmentId, string patientName,
-                                                    DateTime start, TimeSpan duration, int room)
-        {
+                                                    DateTime start, TimeSpan duration, int room) {
             MedicalAppointment medicalAppointment = new MedicalAppointment();
             medicalAppointment.Id = appointmentId;
             medicalAppointment.StartTime = start;
             medicalAppointment.EndTime = start.Add(duration);
             medicalAppointment.Subject = patientName;
-
-            // Assign one of the predefined labels to an appointment
             medicalAppointment.LabelId = rnd.Next(1, 10);
 
             medicalAppointment.Location = String.Format("{0}", room);
@@ -72,8 +69,7 @@ namespace SchedulerExample
 
         public ObservableCollection<MedicalAppointment> MedicalAppointments { get; private set; }
 
-        public ReceptionDeskData()
-        {
+        public ReceptionDeskData() {
             CreateMedicalAppointments();
         }
     }
