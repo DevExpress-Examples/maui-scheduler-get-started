@@ -43,6 +43,8 @@ namespace SchedulerExample
             public IReadOnlyList<MedicalAppointment> MedicalAppointments
             { get => data.MedicalAppointments; }
 
+            public IReadOnlyList<MedicalAppointmentType> AppointmentTypes { get => data.Labels; }
+
             public ReceptionDeskViewModel()
             {
                 data = new ReceptionDeskData();
