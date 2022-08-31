@@ -42,7 +42,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="DevExpress.Maui.Scheduler" Version="22.1.4" />
+	  <PackageReference Include="DevExpress.Maui.Scheduler" Version="22.1.*" />
 	</ItemGroup>
 
 </Project>
