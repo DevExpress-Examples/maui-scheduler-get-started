@@ -37,11 +37,11 @@ namespace SchedulerExample
         public static string[] AppointmentTypes = { "Hospital", "Office",
                                                     "Phone Consultation",
                                                     "Home", "Hospice" };
-        public static Color[] AppointmentTypeColors = { Color.FromHex("#dfcfe9"),
-                                                        Color.FromHex("#c2f49d"),
-                                                        Color.FromHex("#8de8df"),
-                                                        Color.FromHex("#a8d5ff"),
-                                                        Color.FromHex("#c8f4ff") };
+        public static Color[] AppointmentTypeColors = { Color.FromArgb("#dfcfe9"),
+                                                        Color.FromArgb("#c2f49d"),
+                                                        Color.FromArgb("#8de8df"),
+                                                        Color.FromArgb("#a8d5ff"),
+                                                        Color.FromArgb("#c8f4ff"), };
 
         static Random rnd = new Random();
 
