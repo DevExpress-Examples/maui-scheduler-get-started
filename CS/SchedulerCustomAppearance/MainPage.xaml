@@ -10,7 +10,7 @@
 
     <ContentPage.Resources>
         <ResourceDictionary>
-            <dxsch:TextStyle x:Key="redText" Color="Red"/>
+            <Color x:Key="redText">Red</Color>
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -33,41 +33,41 @@
             </dxsch:SchedulerDataStorage>
         </dxsch:WorkWeekView.DataStorage>
         <!--Customize the date header appearance.-->
-        <dxsch:WorkWeekView.HeaderItemStyle>
-            <dxsch:DayViewHeaderItemStyle BackgroundColor="#dce0ec" 
+        <dxsch:WorkWeekView.HeaderItemAppearance>
+            <dxsch:DayViewHeaderItemAppearance BackgroundColor="#dce0ec" 
                                           TodayDayNumberBackgroundColor="#fff7c2"
-                                          TodayDayNumberTextStyle="{StaticResource redText}"
-                                          TodayWeekDayTextStyle="{StaticResource redText}"/>
-        </dxsch:WorkWeekView.HeaderItemStyle>
+                                          TodayDayNumberTextColor="{StaticResource redText}"
+                                          TodayWeekDayTextColor="{StaticResource redText}"/>
+        </dxsch:WorkWeekView.HeaderItemAppearance>
 
         <!--Customize the time ruler appearance.-->
-        <dxsch:WorkWeekView.TimeRulerCellStyle>
-            <dxsch:TimeRulerCellStyle BackgroundColor="#dce0ec" 
+        <dxsch:WorkWeekView.TimeRulerCellAppearance>
+            <dxsch:TimeRulerCellAppearance BackgroundColor="#dce0ec" 
                                       IntervalTickColor="#8e9bbc" IntervalTickLength="15"
                                       SlotTickColor="#8e9bbc" SlotTickLength="7"/>
-        </dxsch:WorkWeekView.TimeRulerCellStyle>
-        <dxsch:WorkWeekView.TimeRulerHeaderStyle>
-            <dxsch:TimeRulerHeaderStyle BackgroundColor="#dce0ec"/>
-        </dxsch:WorkWeekView.TimeRulerHeaderStyle>
+        </dxsch:WorkWeekView.TimeRulerCellAppearance>
+        <dxsch:WorkWeekView.TimeRulerHeaderAppearance>
+            <dxsch:TimeRulerHeaderAppearance BackgroundColor="#dce0ec"/>
+        </dxsch:WorkWeekView.TimeRulerHeaderAppearance>
 
         <!--Customize the all-day area appearance.-->
-        <dxsch:WorkWeekView.AllDayCellStyle>
-            <dxsch:AllDayAreaCellStyle BackgroundColor="#f1f1f1" 
+        <dxsch:WorkWeekView.AllDayCellAppearance>
+            <dxsch:AllDayAreaCellAppearance BackgroundColor="#f1f1f1" 
                                        TodayBackgroundColor="#fff7c2"/>
-        </dxsch:WorkWeekView.AllDayCellStyle>
+        </dxsch:WorkWeekView.AllDayCellAppearance>
 
         <!--Customize the cell appearance.-->
-        <dxsch:WorkWeekView.CellStyle>
-            <dxsch:DayViewCellStyle WorkTimeBackgroundColor="White"
+        <dxsch:WorkWeekView.CellAppearance>
+            <dxsch:DayViewCellAppearance WorkTimeBackgroundColor="White"
                                     BackgroundColor="#f1f1f1"
                                     TodayBackgroundColor="#fff7c2"
                                     BorderColor="#bdbdbd"
                                     SlotBorderColor="#e1e1e1">
-                <dxsch:DayViewCellStyle.Customizer>
+                <dxsch:DayViewCellAppearance.Customizer>
                     <local:WorkWeekViewCellCustomizer/>
-                </dxsch:DayViewCellStyle.Customizer>
-            </dxsch:DayViewCellStyle>
-        </dxsch:WorkWeekView.CellStyle>
+                </dxsch:DayViewCellAppearance.Customizer>
+            </dxsch:DayViewCellAppearance>
+        </dxsch:WorkWeekView.CellAppearance>
     </dxsch:WorkWeekView>
 
 </ContentPage>
