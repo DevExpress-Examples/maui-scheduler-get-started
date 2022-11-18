@@ -33,7 +33,7 @@ This repository contains an example that demonstrates how to get started with th
 
 ### Customize a Scheduler Appearance
 
-This example shows how to customize the appearance of the [DayViewHeader](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#day-view-header-item), [TimeRulerCell](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#time-ruler-cell), [All Day Area Cell](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#all-day-area-cell), and [Work Week View Cells](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#day-view-cell).
+This example shows how to customize the appearance of the [DayViewHeader](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#day-view-header-item), [TimeRulerCell](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#time-ruler-cell), [All Day Area Cell](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#all-day-area-cell), and [Work Week View Cell](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#day-view-cell) elements.
 
 
 <img src="./Images/week-view-example.png" alt="Week View">
