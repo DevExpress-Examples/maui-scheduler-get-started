@@ -17,11 +17,33 @@ Please register the DevExpress NuGet Gallery in Visual Studio to restore the NuG
 
 ## What's in This Repository
 
+### Get Started with the Scheduler
+
 The **DevExpress Scheduler for .NET MAUI** display appointments (regular and recurrent planned events) and allows users to manage them.
+
+<img src="./Images/scheduler-get-started.png" alt="Week View">
+
+This repository contains an example that demonstrates how to get started with the **DevExpress Scheduler for .NET MAUI**.
+
+#### Files to Review
+
+* [MainPage.xaml](./CS/SchedulerExample/MainPage.xaml)
+* [MainPage.xaml.cs](./CS/SchedulerExample/MainPage.xaml.cs)
+* [Data.cs](./CS/SchedulerExample/Data.cs)
+
+### Customize a Scheduler Appearance
+
+This example shows how to customize the appearance of the [DayViewHeader](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#day-view-header-item), [TimeRulerCell](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#time-ruler-cell), [All Day Area Cell](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#all-day-area-cell), and [Work Week View Cells](https://docs.devexpress.com/MAUI/403736/scheduler-and-calendar/scheduler/visual-elements#day-view-cell).
+
 
 <img src="./Images/week-view-example.png" alt="Week View">
 
-This repository contains an example that demonstrates how to get started with the **DevExpress Scheduler for .NET MAUI**.
+#### Files to Review
+
+* [MainPage.xaml](./CS/SchedulerCustomAppearance/MainPage.xaml)
+* [MainPage.xaml.cs](./CS/SchedulerCustomAppearance/MainPage.xaml.cs)
+* [ReceptionDeskData.cs](./CS/SchedulerCustomAppearance/ReceptionDeskData.cs)
+
 
 ## Documentation
 
