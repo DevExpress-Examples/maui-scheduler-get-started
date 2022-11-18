@@ -93,7 +93,7 @@ namespace SchedulerExample
             medicalAppointment.Subject = patientName;
 
             // Assign one of the predefined labels to an appointment
-            medicalAppointment.LabelId = rnd.Next(1, 10);
+            medicalAppointment.LabelId = rnd.Next(1, 5);
 
             medicalAppointment.Location = String.Format("{0}", room);
             return medicalAppointment;
