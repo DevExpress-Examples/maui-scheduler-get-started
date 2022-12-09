@@ -68,7 +68,7 @@ namespace SchedulerExample
             ObservableCollection<MedicalAppointment> result =
                                                      new ObservableCollection<MedicalAppointment>();
             for (int i = -20; i < 20; i++)
-                for (int j = 0; j < 15; j++)
+                for (int j = 0; j < 7; j++)
                 {
                     int room = rnd.Next(1, 100);
                     start = BaseDate.AddDays(i).AddHours(rnd.Next(8, 17)).AddMinutes(rnd.Next(0, 40));
