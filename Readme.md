@@ -54,7 +54,7 @@ This example shows how to customize the appearance of the [DayViewHeader](https:
 - [Navigation](https://docs.devexpress.com/MAUI/403297/navigation/index)
 - [Data Editors](https://docs.devexpress.com/MAUI/403427/editors/index)
 - [Collection View](https://docs.devexpress.com/MAUI/403324/collection-view/index)
-- [Popup](http://docs.devexpress.devx/MAUI/403733/popup/index)
+- [Popup](https://docs.devexpress.com/MAUI/403733/dialogs-menu-and-navigation/index)
 
 ## More Examples
 
