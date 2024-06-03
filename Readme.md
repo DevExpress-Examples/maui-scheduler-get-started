@@ -50,6 +50,7 @@ This example displays appointments grouped by day.
 
 <img src="https://github.com/DevExpress-Examples/maui-scheduler-get-started/assets/12169834/ce26be32-bc01-47b7-b731-67601c166788" alt="Agenda View" width="30%">
 
+
 #### Files to Review
 
 * [MainPage.xaml](./CS/AgendaView/MainPage.xaml)
