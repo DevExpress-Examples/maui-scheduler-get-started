@@ -31,6 +31,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
     <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-    <PackageReference Include="DevExpress.Maui.Scheduler" Version="23.2.*" />
+    <PackageReference Include="DevExpress.Maui.Scheduler" Version="24.1.*-beta-*" />
   </ItemGroup>
 </Project>
