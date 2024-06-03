@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchedulerExample", "Schedul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchedulerCustomAppearance", "SchedulerCustomAppearance\SchedulerCustomAppearance.csproj", "{5B2A488A-270C-49C6-86C8-198D236F60DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaView", "AgendaView\AgendaView.csproj", "{A57974E2-49C5-4CD2-A3F9-FC24D5EE1660}
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgendaView", "AgendaView\AgendaView.csproj", "{A57974E2-49C5-4CD2-A3F9-FC24D5EE1660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
