@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dxsch="clr-namespace:DevExpress.Maui.Scheduler;assembly=DevExpress.Maui.Scheduler"
+             xmlns:dx="http://schemas.devexpress.com/maui"
              xmlns:local="clr-namespace:SchedulerCustomAppearance"
              x:Class="SchedulerCustomAppearance.MainPage">
     <ContentPage.BindingContext>
@@ -14,60 +13,60 @@
         </ResourceDictionary>
     </ContentPage.Resources>
 
-    <dxsch:WorkWeekView>
-        <dxsch:WorkWeekView.DataStorage>
-            <dxsch:SchedulerDataStorage>
-                <dxsch:SchedulerDataStorage.DataSource>
-                    <dxsch:DataSource AppointmentsSource="{Binding MedicalAppointments}">
-                        <dxsch:DataSource.AppointmentMappings>
-                            <dxsch:AppointmentMappings 
+    <dx:WorkWeekView>
+        <dx:WorkWeekView.DataStorage>
+            <dx:SchedulerDataStorage>
+                <dx:SchedulerDataStorage.DataSource>
+                    <dx:DataSource AppointmentsSource="{Binding MedicalAppointments}">
+                        <dx:DataSource.AppointmentMappings>
+                            <dx:AppointmentMappings 
                                     Id="Id" 
                                     Start="StartTime" 
                                     End="EndTime" 
                                     Subject="Subject"
                                     LabelId="LabelId"
                                     Location="Location"/>
-                        </dxsch:DataSource.AppointmentMappings>
-                    </dxsch:DataSource>
-                </dxsch:SchedulerDataStorage.DataSource>
-            </dxsch:SchedulerDataStorage>
-        </dxsch:WorkWeekView.DataStorage>
+                        </dx:DataSource.AppointmentMappings>
+                    </dx:DataSource>
+                </dx:SchedulerDataStorage.DataSource>
+            </dx:SchedulerDataStorage>
+        </dx:WorkWeekView.DataStorage>
         <!--Customize the date header appearance.-->
-        <dxsch:WorkWeekView.HeaderItemAppearance>
-            <dxsch:DayViewHeaderItemAppearance BackgroundColor="#dce0ec" 
+        <dx:WorkWeekView.HeaderItemAppearance>
+            <dx:DayViewHeaderItemAppearance BackgroundColor="#dce0ec" 
                                           TodayDayNumberBackgroundColor="#fff7c2"
                                           TodayDayNumberTextColor="{StaticResource redText}"
                                           TodayWeekDayTextColor="{StaticResource redText}"/>
-        </dxsch:WorkWeekView.HeaderItemAppearance>
+        </dx:WorkWeekView.HeaderItemAppearance>
 
         <!--Customize the time ruler appearance.-->
-        <dxsch:WorkWeekView.TimeRulerCellAppearance>
-            <dxsch:TimeRulerCellAppearance BackgroundColor="#dce0ec" 
+        <dx:WorkWeekView.TimeRulerCellAppearance>
+            <dx:TimeRulerCellAppearance BackgroundColor="#dce0ec" 
                                       IntervalTickColor="#8e9bbc" IntervalTickLength="15"
                                       SlotTickColor="#8e9bbc" SlotTickLength="7"/>
-        </dxsch:WorkWeekView.TimeRulerCellAppearance>
-        <dxsch:WorkWeekView.TimeRulerHeaderAppearance>
-            <dxsch:TimeRulerHeaderAppearance BackgroundColor="#dce0ec"/>
-        </dxsch:WorkWeekView.TimeRulerHeaderAppearance>
+        </dx:WorkWeekView.TimeRulerCellAppearance>
+        <dx:WorkWeekView.TimeRulerHeaderAppearance>
+            <dx:TimeRulerHeaderAppearance BackgroundColor="#dce0ec"/>
+        </dx:WorkWeekView.TimeRulerHeaderAppearance>
 
         <!--Customize the all-day area appearance.-->
-        <dxsch:WorkWeekView.AllDayCellAppearance>
-            <dxsch:AllDayAreaCellAppearance BackgroundColor="#f1f1f1" 
+        <dx:WorkWeekView.AllDayCellAppearance>
+            <dx:AllDayAreaCellAppearance BackgroundColor="#f1f1f1" 
                                        TodayBackgroundColor="#fff7c2"/>
-        </dxsch:WorkWeekView.AllDayCellAppearance>
+        </dx:WorkWeekView.AllDayCellAppearance>
 
         <!--Customize the cell appearance.-->
-        <dxsch:WorkWeekView.CellAppearance>
-            <dxsch:DayViewCellAppearance WorkTimeBackgroundColor="White"
+        <dx:WorkWeekView.CellAppearance>
+            <dx:DayViewCellAppearance WorkTimeBackgroundColor="White"
                                     BackgroundColor="#f1f1f1"
                                     TodayBackgroundColor="#fff7c2"
                                     BorderColor="#bdbdbd"
                                     SlotBorderColor="#e1e1e1">
-                <dxsch:DayViewCellAppearance.Customizer>
+                <dx:DayViewCellAppearance.Customizer>
                     <local:WorkWeekViewCellCustomizer/>
-                </dxsch:DayViewCellAppearance.Customizer>
-            </dxsch:DayViewCellAppearance>
-        </dxsch:WorkWeekView.CellAppearance>
-    </dxsch:WorkWeekView>
+                </dx:DayViewCellAppearance.Customizer>
+            </dx:DayViewCellAppearance>
+        </dx:WorkWeekView.CellAppearance>
+    </dx:WorkWeekView>
 
 </ContentPage>

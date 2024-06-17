@@ -1,15 +1,15 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:dxsch="clr-namespace:DevExpress.Maui.Scheduler;assembly=DevExpress.Maui.Scheduler"
+             xmlns:dx="http://schemas.devexpress.com/maui"
              x:Class="AgendaView.MainPage"
              Title="Example">
-   <dxsch:AgendaView x:Name="agendaView" Start="{Binding Start, Mode=TwoWay}" ShowNewAppointmentButton="True" NewAppointmentButtonClicked="OnNewAppointmentClicked" Tap="OnTap">
-        <dxsch:AgendaView.DataStorage>
-            <dxsch:SchedulerDataStorage x:Name="storage">
-                <dxsch:SchedulerDataStorage.DataSource>
-                    <dxsch:DataSource AppointmentsSource="{Binding Appointments}">
-                        <dxsch:DataSource.AppointmentMappings>
-                            <dxsch:AppointmentMappings Type="AppointmentType"
+   <dx:AgendaView x:Name="agendaView" Start="{Binding Start, Mode=TwoWay}" ShowNewAppointmentButton="True" NewAppointmentButtonClicked="OnNewAppointmentClicked" Tap="OnTap">
+        <dx:AgendaView.DataStorage>
+            <dx:SchedulerDataStorage x:Name="storage">
+                <dx:SchedulerDataStorage.DataSource>
+                    <dx:DataSource AppointmentsSource="{Binding Appointments}">
+                        <dx:DataSource.AppointmentMappings>
+                            <dx:AppointmentMappings Type="AppointmentType"
                                                        AllDay="AllDay"
                                                        Start="Start"
                                                        End="End"
@@ -21,10 +21,10 @@
                                                        Subject="Subject"
                                                        LabelId="Label"
                                                         />
-                        </dxsch:DataSource.AppointmentMappings>
-                    </dxsch:DataSource>
-                </dxsch:SchedulerDataStorage.DataSource>
-            </dxsch:SchedulerDataStorage>
-        </dxsch:AgendaView.DataStorage>
-    </dxsch:AgendaView>
+                        </dx:DataSource.AppointmentMappings>
+                    </dx:DataSource>
+                </dx:SchedulerDataStorage.DataSource>
+            </dx:SchedulerDataStorage>
+        </dx:AgendaView.DataStorage>
+    </dx:AgendaView>
 </ContentPage>

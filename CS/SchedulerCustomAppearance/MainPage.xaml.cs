@@ -13,7 +13,7 @@ namespace SchedulerCustomAppearance {
         public void Customize(DayViewCellViewModel cell) {
             if (cell.Interval.Start.Hour < DateTime.Now.Hour
                 && cell.Interval.Start.Date == DateTime.Today) {
-                cell.BackgroundColor = Color.FromHex("#fbf7e0");
+                cell.BackgroundColor = Color.FromArgb("#fbf7e0");
             }
         }
     }

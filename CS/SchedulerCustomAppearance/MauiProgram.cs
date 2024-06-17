@@ -7,6 +7,10 @@ namespace SchedulerCustomAppearance {
             builder
                 .UseMauiApp<App>()
                 .UseDevExpress()
+                .UseDevExpressScheduler()
+                .UseDevExpressCollectionView()
+                .UseDevExpressControls()
+                .UseDevExpressEditors()
                 .ConfigureFonts(fonts => {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
